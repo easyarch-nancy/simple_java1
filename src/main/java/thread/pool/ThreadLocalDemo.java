@@ -16,6 +16,8 @@ public class ThreadLocalDemo {
         @Override
         public void run(){
             try{
+
+                //set 进去先获得当前线程对象 拿到map 后去设置一个值  具体看源码
                 if(t1.get()==null){
                     t1.set(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
                 }
