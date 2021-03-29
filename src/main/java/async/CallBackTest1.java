@@ -1,4 +1,5 @@
 package async;
+
 //异步回调
 public class CallBackTest1 {
 
@@ -59,4 +60,6 @@ class Calculator1 implements CallBackInterface1{
         //控制台输出
         System.out.println(a + " + " + b + " = " + result);
     }
+
+
 }
