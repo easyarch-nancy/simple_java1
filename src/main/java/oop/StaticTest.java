@@ -4,6 +4,8 @@ public class StaticTest {
 
     //加下面这句之前 打印 1 4
     //加下面这句之后 打印2 3 1 4
+    //类变量：准备阶段加载
+    //想要创建这个类变量 就得先把这个类加载完
     static StaticTest staticTest = new StaticTest();
 
 
@@ -14,7 +16,7 @@ public class StaticTest {
     //这句放这该为1 2 3 4
 //    static StaticTest staticTest = new StaticTest();
 
-    {//实例代码块 是在对象初始化的时候做
+    {//实例代码块 是在对象初始化的时候做 先加载
         System.out.println(2);
     }
 
