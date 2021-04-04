@@ -5,11 +5,11 @@ import java.util.Map;
 
 public class SimpleMap {
     public static void main(String[] args) {
-        Map map=new HashMap();
-        map.put("a","b");
-        map.put("d","b");
-        map.put("q","b");
-        map.put("y","b");
+        Map map = new HashMap();
+        map.put("a", "b");
+        map.put("d", "b");
+        map.put("q", "b");
+        map.put("y", "b");
         System.out.println(map);
         //map中最典型的就是hashmap
         //hashmap的值是一个 entry 即kv对（entry<k,v>

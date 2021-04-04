@@ -1,15 +1,19 @@
 package oop;
 
-public class Student extends Person{
+public class Student extends Person {
     private int clazzLevel;
     private int clazzId;
     private boolean isClazzLeader;
 
     private Integer id = 3000;
 
-    public Integer getId(){return id;}
+    public Integer getId() {
+        return id;
+    }
 
-    public void setId(Integer id){this.id=id;}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     private String clazzLeaderTitle;
 
@@ -45,8 +49,8 @@ public class Student extends Person{
         this.clazzId = clazzId;
     }
 
-    private class Test12{
-        public void test(){
+    private class Test12 {
+        public void test() {
             Student student = new Student();
         }
     }

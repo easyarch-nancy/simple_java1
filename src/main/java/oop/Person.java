@@ -1,8 +1,13 @@
 package oop;
 
 public class Person {
-    public Integer getId(){return id;}
-    public void setId(Integer id){this.id = id;}
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     private Integer id;
     private int age;
@@ -10,9 +15,13 @@ public class Person {
     private String email;
     private String username;
 
-    public boolean isStrdent(){return isStrdent();}
+    public boolean isStrdent() {
+        return isStrdent();
+    }
 
-    public void setStudent(boolean student){isStudent = student;}
+    public void setStudent(boolean student) {
+        isStudent = student;
+    }
 
     private boolean isStudent;
 //    public Person(String id,int age) {
@@ -27,10 +36,18 @@ public class Person {
 //    }
 
 
+    public int getAge() {
+        return age;
+    }
 
-    public int getAge(){return age;}
-    public void setAge(int age){this.age=age;}
-    public String getPassword(){return password;}
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
     public void setPassword(String password) {
         this.password = password;
     }
@@ -52,8 +69,8 @@ public class Person {
     }
 
 
-    public void print(){
-        System.out.println(this.age+"_"+this.username);
+    public void print() {
+        System.out.println(this.age + "_" + this.username);
     }
 
 

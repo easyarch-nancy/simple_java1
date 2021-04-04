@@ -5,12 +5,12 @@ public class Dog extends Animal {
     private int foot = 22;
 
     @Override
-    public void eat(){
+    public void eat() {
         System.out.println("++++++++++aooaoa");
     }
 
     @Override
-    public void sleep(){
+    public void sleep() {
         System.out.println("+++++++++ssssss");
     }
 }

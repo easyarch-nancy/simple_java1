@@ -12,13 +12,14 @@ package thread.lock;
 // 3.用于某个静态方法，相当于对类加锁，能够调用类中的方法，使用类中的属性，都必须先获得这个类的锁。
 
 
-public class BadLock implements Runnable{
-    public static Integer i=0;
+public class BadLock implements Runnable {
+    public static Integer i = 0;
     private static BadLock badLock = new BadLock();
+
     @Override
-    public void run(){
-        for(int j=0;j<10000000;j++){
-            synchronized(badLock){//锁
+    public void run() {
+        for (int j = 0; j < 10000000; j++) {
+            synchronized (badLock) {//锁
                 i++;
             }
         }

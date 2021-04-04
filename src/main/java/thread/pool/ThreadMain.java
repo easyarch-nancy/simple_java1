@@ -1,7 +1,8 @@
 package thread.pool;
 
 public class ThreadMain {//main方法在启动的时候也是一条线程在做，这个叫做主线程
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         Thread1 thread1 = new Thread1();
 //        thread1.start();
 

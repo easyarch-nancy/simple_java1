@@ -13,13 +13,13 @@ public class SimpleReflect {
             ClassNotFoundException,
             IllegalAccessException,
             InstantiationException,
-            NoSuchFieldException{
+            NoSuchFieldException {
         //一般的创建对象
         Person p = new Person();
 
         //反射的创建对象
         String className = "reflect.entity.Person";
-        Class<?> c =Class.forName(className);
+        Class<?> c = Class.forName(className);
         Object obj = c.newInstance();
 
         //获取私有字段
@@ -30,12 +30,12 @@ public class SimpleReflect {
         nameField.setAccessible(true);
         ageField.setAccessible(true);
 
-        nameField.set(obj,"aaaa");
-        ageField.set(obj,11);
+        nameField.set(obj, "aaaa");
+        ageField.set(obj, 11);
 
-        System.out.println("name:"+nameField.get(obj));
-        System.out.println("age:"+ageField.get(obj));
-        p=(Person) obj;
+        System.out.println("name:" + nameField.get(obj));
+        System.out.println("age:" + ageField.get(obj));
+        p = (Person) obj;
         System.out.println("字段设置的值：name=" + p.getName() + ",age=" + p.getAge());
 
     }

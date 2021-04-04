@@ -7,20 +7,29 @@ package reflect.entity;
 
 public class Person {
     private String id;
-    private  String name;
-    private  int age;
+    private String name;
+    private int age;
 
-    public String getId(){return id;}
+    public String getId() {
+        return id;
+    }
 
-    public void setId(String id){this.id=id;}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setName(String name){this.name = name;}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public int getAge(){return age;}
+    public int getAge() {
+        return age;
+    }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -41,7 +50,7 @@ public class Person {
 
     }
 
-    public void fun6(String[] str){
+    public void fun6(String[] str) {
 
     }
 

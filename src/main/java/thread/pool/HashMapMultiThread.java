@@ -3,17 +3,22 @@ package thread.pool;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
 //多线程操作并发问题
 public class HashMapMultiThread {
-    static Map<String,String> map = new ConcurrentHashMap<String, String>() ;
-    public static class AddThread implements Runnable{
+    static Map<String, String> map = new ConcurrentHashMap<String, String>();
+
+    public static class AddThread implements Runnable {
         int start = 0;
-        public AddThread(int start){this.start = start;}
+
+        public AddThread(int start) {
+            this.start = start;
+        }
 
         @Override
-        public void run(){
-            for(int i = start;i<1000000;i+=2){
-                map.put(Integer.toString(i),Integer.toBinaryString(i));
+        public void run() {
+            for (int i = start; i < 1000000; i += 2) {
+                map.put(Integer.toString(i), Integer.toBinaryString(i));
             }
         }
     }

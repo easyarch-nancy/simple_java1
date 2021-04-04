@@ -5,9 +5,9 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class SimpleSet {
-    public static void main(String[] args){
-        Set hashSet=new HashSet();//不重复且无序的集合
-        Set treeSet=new TreeSet();
+    public static void main(String[] args) {
+        Set hashSet = new HashSet();//不重复且无序的集合
+        Set treeSet = new TreeSet();
 //        hashSet.add("t");
 //        hashSet.add("i");//add还有一个返回值
 //        boolean q= hashSet.add("i");

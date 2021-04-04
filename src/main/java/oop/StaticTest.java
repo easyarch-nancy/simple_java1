@@ -9,7 +9,6 @@ public class StaticTest {
     static StaticTest staticTest = new StaticTest();
 
 
-
     static {
         System.out.println(1);
     }
@@ -21,16 +20,17 @@ public class StaticTest {
     }
 
     //实例构造 方法
-    StaticTest(){
+    StaticTest() {
         System.out.println(3);
     }
 
-    public static void staticFun(){
+    public static void staticFun() {
         System.out.println(4);
     }
-    int a=5;//实例变量
-    static int b=6;//在准备阶段 这里的b值是0，b同时也在准备阶段被赋值为6
-    static final int A  = 1;//常量是在编译时赋的值
+
+    int a = 5;//实例变量
+    static int b = 6;//在准备阶段 这里的b值是0，b同时也在准备阶段被赋值为6
+    static final int A = 1;//常量是在编译时赋的值
 
 
     public static void main(String[] args) {
